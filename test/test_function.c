@@ -37,18 +37,18 @@ int main() {
 }
 /* Write all the test functions */
 void test_do_celsius_fahrenheit(void) {
-  CU_ASSERT(86.0 == do_celsius_fahrenheit(30.0));
-  CU_ASSERT(68.0 == do_celsius_fahrenheit(20.0));
+  CU_ASSERT(86 == do_celsius_fahrenheit(30));
+  CU_ASSERT(68 == do_celsius_fahrenheit(20));
  
 
   /* Dummy fail*/
-  CU_ASSERT(100.0 == do_celsius_fahrenheit(25.0));
+  CU_ASSERT(100 == do_celsius_fahrenheit(25));
 }
 
 void test_do_fahrenheit_celsius(void) {
-  CU_ASSERT(37.7 == do_fahrenheit_celsius(100.0));
-  CU_ASSERT(32.2 == do_fahrenheit_celsius(90.0));
+  CU_ASSERT(37 == do_fahrenheit_celsius(100));
+ 
 
   /* Dummy fail*/
-  CU_ASSERT(2.3 == do_fahrenheit_celsius(80.0));
+  CU_ASSERT(2== do_fahrenheit_celsius(80));
 }
